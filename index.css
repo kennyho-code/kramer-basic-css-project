@@ -156,8 +156,64 @@ footer span[class*="fa-"] {
     font-size: 3rem;
 }
 
+.section-dkblue{
+    background-color: var(--dkblue);
+    padding: 2rem 2rem;
 
+}
 
+/* Technique Styles */
+#techniques article h3 {
+    color: var(--aqua);  
+  
+}
+
+@media (min-width: 800px){
+    #techniques {
+        background-color: var(--dkblue);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #techniques article{
+        display: grid;
+        grid: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+    
+    #techniques article .text{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #techniques article p {
+        color: var(--aqua);        
+    }
+    
+    #techniques article div:last-child{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #techniques .reverse .text {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #techniques .reverse div:last-child {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+}
+
+.blue-technique {
+    height: 300px;
+    width: 600px;
+    background: linear-gradient(90deg, rgba(38,140,223,1) 0%, rgba(40,31,96,1) 100%);
+    border-radius: 5px;
+}
 .button{
     padding: 0.5rem 1rem;
     background-color: var(--magenta);
